@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dj16eebwt4cby"]
+
+[ext_resource type="VideoStream" path="res://2.bolumbaslangic2.ogv" id="1_g0gxk"]
+[ext_resource type="Script" path="res://2bolumbaslangic.gd" id="2_i8or6"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_right = 720.0
+offset_bottom = 439.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.627899, 0.653979)
+stream = ExtResource("1_g0gxk")
+autoplay = true
+script = ExtResource("2_i8or6")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

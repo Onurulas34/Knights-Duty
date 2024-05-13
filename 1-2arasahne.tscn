@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://5forokmtys2"]
+
+[ext_resource type="VideoStream" path="res://0421.ogv" id="1_fj4ug"]
+[ext_resource type="Script" path="res://1-2arasahne.gd" id="2_q55su"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.05176e-05
+offset_top = -3.99998
+offset_right = 768.0
+offset_bottom = 436.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+stream = ExtResource("1_fj4ug")
+autoplay = true
+script = ExtResource("2_q55su")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
